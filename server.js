@@ -1,8 +1,8 @@
-const express = require('express');
+const express = require("express");
 const { getCollectionDate } = require("./utils.js");
 const path = require("path");
 
-const PORT = 3001;
+const PORT = procces.env.PORT || 3001;
 
 const app = express();
 
@@ -26,22 +26,19 @@ app.post("/api/collection-date", async (req, res) => {
     const recycle = resultsStr.match(regexRecycle);
     const organics = resultsStr.match(regexOrganic);
 
-    const result = ({
+    const result = {
         trash: trash ? trash[1] : null,
         recycle: recycle ? recycle[1] : null,
-        organics: organics ? organics[1] : null
-    });
+        organics: organics ? organics[1] : null,
+    };
 
     res.json(result);
 });
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "./public/index.html"));
-
-
 });
 
 app.listen(PORT, () => {
     console.log("Listening on port " + PORT);
 });
-
