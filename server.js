@@ -1,6 +1,7 @@
 const express = require("express");
 const { getCollectionDate } = require("./utils.js");
 const path = require("path");
+const connection = require("./config/connection.js");
 
 const PORT = process.env.PORT || 3001;
 
@@ -37,6 +38,24 @@ app.post("/api/collection-date", async (req, res) => {
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+app.get("/api/users", async (req, res) => {
+    connection.query(`SELECT * FROM user`, (error, result) => {
+        if (error) throw error;
+
+        console.log(result)
+        res.json(result)
+    });
+});
+
+app.get("/api/comments", async (req, res) => {
+    connection.query(`SELECT * FROM comment`, (error, result) => {
+        if (error) throw error;
+
+        console.log(result)
+        res.json(result)
+    });
 });
 
 app.listen(PORT, () => {

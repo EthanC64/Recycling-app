@@ -10,46 +10,56 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-  <header>
-    <h1>Recycling App</h1>
-  </header>
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <img class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"><img src="asset/image/recycling-app-logo.png"></use></img>
+    <span class="fs-4">Recycling App</span>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#how-it-works">How It Works</a>
-    <a href="#recycling-tips">Recycling Tips</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
+  </a>
+
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="#discussion" class="nav-link">Discussion</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#recycling-tips" class="nav-link">Recycling Tips</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </header>
+</div>
+
 
   
+
 
 
   </ul>
   </div>
-  </div> 
-  </header>
-  <div class="p-5 text-center bg-body-tertiary rounded-3">
-    <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
-    <h1 class="title">Recling App</h1>
-    <p class="col-lg-8 mx-auto fs-5 text-muted">
-      This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
-    </p>
-    <div class="d-inline-flex gap-2 mb-5">
-      <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
-        Call to action
-        <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
-      </button>
-      <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
-        Secondary link
-      </button>
-    </div>
   </div>
-  <section class="hero">
+  </header>
+
   
-  </section>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <img src="https://t4.ftcdn.net/jpg/03/85/81/51/360_F_385815126_TXjBAW0Zo1PdUtu9AEAOhxk8JvNVNz5h.jpg" alt="Trash Cans">
+      
+      <h1 class="display-3 fw-bold">Recycling App</h1>
+      <h3 class="fw-normal text-muted mb-3">Help reduce waste in the environment with the Recycling App</h3>
+      <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a href="https://getitdone.sandiego.gov/CollectionMapLookup" target="_blank">
+          <button type="button" class="collection-date-btn">Look up collection date</button>
+        </a>
+        <!-- <a class="icon-link" href="#">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a> -->
+      </div>
+    </div>
+    <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+  </div>
+  
 
 
 
@@ -57,27 +67,50 @@
     <h2>About the Recycling App</h2>
     <p>
       Recycling not only reduces the amount of waste that is sent to landfills
-      but also conserves natural resources. Being able to throw trash away is
-      very beneficial to the environment. To make it easier to do this, I
-      created this website! With this website, you are able to be certain of
-      you trash and recycling pickup schedules. It's as simple as typing in
-      your address and you will be able to view the dates. This can optimize
-      your trash routine with ease. This website also allows you to input an
-      item and it will tell you what bin to put it in. This tool is useful
-      because of the new compost bin that adds another option(add different
-      word than option). For example if you don't know which bin to put your
-      banana peels into, you can type it in and it will tell you to put it in
-      the compost bin. For specific materials such as electronics, batteries,
-      glass, or plastic, This Website will show a map of nearby recycling
-      center that will accept those items. For even more information about
-      waste reduction tips, this website will include articles, videos, and
-      infographics on topics such as minimizing single-use plastics,
-      composting, upcycling, repurposing, and creative ways to reduce waste in
-      everyday life.
+      but also conserves natural resources. To help reduce the amount of waste, I created a Recycling App!
     </p>
     <!-- Add more content here -->
   </section>
 
+  <section class="discussion" id="discussion">
+    <h2>Discussion</h2>
+    <div id="current">template</div>
+    <div id="chat-container"></div>
+
+    <h3>(write a comment here)</h3>
+    <div class="comment">
+      
+      <!-- reload page -->
+      <form action="#">
+        <input type="text" name="full_name" placeholder="Full Name...">
+        <input type="email" name="email" placeholder="Email Address...">
+        <textarea name="comment" placeholder="Type Your Comment..."></textarea>
+        <button type="submit">Submit Comment</button>
+      </form>
+
+    </div>
+  </section>
+
+  <section class="recycling-tips" id="recycling-tips">
+    <h2>Form</h2>
+    <form id="car-form">
+      <!-- <div class="form-group">
+        <label for="passenger">Passengers</label>
+        <input type="number" class="form-control" id="passenger" placeholder="Passengers">
+      </div> -->
+      <div class="form-group">
+        <label for="distance">Distances</label>
+        <input type="number" class="form-control" id="distance" placeholder="distances">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+      <div id="carboninfo">CO2 emmisions here when you input distance traveled in car</div><!-- Add more content here -->
+    
+      <div id="carboninfo">Click button that correponds to size of your car</div><!-- Add more content here -->
+  </section>
+
+  <div></div>
   <section class="features" id="features">
     <h2>Key Features</h2>
     <ul>
@@ -91,12 +124,6 @@
     </ul>
   </section>
 
-  <section class="how-it-works" id="how-it-works">
-    <h2>How It Works</h2>
-    <p>Step-by-step guide on how to use the app.</p>
-    <!-- Add more content here -->
-  </section>
-
   <section class="recycling-tips" id="recycling-tips">
     <h2>Recycling Tips</h2>
     <p>Helpful tips on recycling and sustainable practices.</p>
@@ -105,12 +132,32 @@
 
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <!-- Add contact form and other contact details here -->
+    <p>E-mail: 64redbrick@gmail.com</p>
   </section>
 
-  <footer>
-    <p>&copy; 2023 Recycling App</p>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Recycling App, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+            <use xlink:href="#twitter"></use>
+          </svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+            <use xlink:href="#instagram"></use>
+          </svg></a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+            <use xlink:href="#facebook"></use>
+          </svg></a></li>
+    </ul>
   </footer>
+
 </body>
 <script src="./scripts.js"></script>
 
