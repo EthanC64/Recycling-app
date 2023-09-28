@@ -71,7 +71,8 @@ document.querySelector("#car-form").addEventListener("submit", async (event) => 
     const headers = new Headers();
 
     headers.append("Content-Type", "application/json");
-    headers.append("Authorization", "Bearer KV1PAKA98BMBBJGY0PQA3QDPQ1FB");
+    
+    
 
     const Fraw = JSON.stringify({
         emission_factor: {
