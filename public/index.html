@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recycling App</title>
+  <title>CO2 Emissions App</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
   <link rel="stylesheet" href="styles.css" />
@@ -12,151 +12,194 @@
 
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-    <img class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"><img src="asset/image/recycling-app-logo.png"></use></img>
-    <span class="fs-4">Recycling App</span>
+    <img class="bi me-2" width="80" height="64" src="asset/image/CO2-Emissions-App.png" alt="CO2 Emissions App">
+
+    <span class="fs-4">CO2 Emissions App</span>
 
 
   </a>
 
 
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#discussion" class="nav-link">Discussion</a></li>
-      <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#recycling-tips" class="nav-link">Recycling Tips</a></li>
-      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </header>
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+    <li class="nav-item"><a href="#discussion" class="nav-link">Discussion</a></li>
+    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="#emmisions-tips" class="nav-link">Emmisions Tips</a></li>
+    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+  </ul>
+</header>
 </div>
 
 
-  
 
 
 
-  </ul>
-  </div>
-  </div>
-  </header>
 
-  
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <img src="https://t4.ftcdn.net/jpg/03/85/81/51/360_F_385815126_TXjBAW0Zo1PdUtu9AEAOhxk8JvNVNz5h.jpg" alt="Trash Cans">
-      
-      <h1 class="display-3 fw-bold">Recycling App</h1>
-      <h3 class="fw-normal text-muted mb-3">Help reduce waste in the environment with the Recycling App</h3>
-      <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a href="https://getitdone.sandiego.gov/CollectionMapLookup" target="_blank">
+</ul>
+</div>
+</div>
+</header>
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
+  <div class="col-md-6 p-lg-5 mx-auto my-5">
+
+
+    <h1 class="display-3 fw-bold">CO2 Emissions App</h1>
+    <h3 class="fw-normal text-muted mb-3">Help reduce CO2 in the environment and track you emmisisons with the CO2
+      Emissions App</h3>
+      <img class="co2-image" id="co2image" width="650" height="640" src="asset/image/co2image.avif" alt="CO2 Image">
+    <div class="d-flex gap-3 justify-content-center lead fw-normal">
+      <!-- collection date lookup -->
+      <!-- <a href="https://getitdone.sandiego.gov/CollectionMapLookup" target="_blank">
           <button type="button" class="collection-date-btn">Look up collection date</button>
-        </a>
-        <!-- <a class="icon-link" href="#">
+        </a> -->
+      <!-- <a class="icon-link" href="#">
           Buy
           <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
         </a> -->
-      </div>
     </div>
-    <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
   </div>
-  
+  <!-- <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> -->
+</div>
 
 
 
-  <section class="about" id="about">
-    <h2>About the Recycling App</h2>
-    <p>
-      Recycling not only reduces the amount of waste that is sent to landfills
-      but also conserves natural resources. To help reduce the amount of waste, I created a Recycling App!
-    </p>
-    <!-- Add more content here -->
-  </section>
 
-  <section class="discussion" id="discussion">
-    <h2>Discussion</h2>
-    <div id="current">template</div>
-    <div id="chat-container"></div>
+<section class="about" id="about">
+  <h2>About the CO2 Emissions App</h2>
+  <p>
+    The CO2 Emissions App allows users to track and reduce their carbon footprint, offeringre tips for
+    sustainable choices and tips toward a greener future.
+  </p>
+  <!-- Add more content here -->
+</section>
 
-    <h3>(write a comment here)</h3>
-    <div class="comment">
-      
-      <!-- reload page -->
-      <form action="#">
-        <input type="text" name="full_name" placeholder="Full Name...">
-        <input type="email" name="email" placeholder="Email Address...">
-        <textarea name="comment" placeholder="Type Your Comment..."></textarea>
-        <button type="submit">Submit Comment</button>
-      </form>
+<section class="discussion" id="discussion">
+  <h2>Discussion</h2>
+  <div id="current">template</div>
+  <div id="chat-container"></div>
 
-    </div>
-  </section>
+  <h3>(write a comment here)</h3>
+  <div class="comment">
 
-  <section class="recycling-tips" id="recycling-tips">
-    <h2>Form</h2>
-    <form id="car-form">
-      <!-- <div class="form-group">
-        <label for="passenger">Passengers</label>
-        <input type="number" class="form-control" id="passenger" placeholder="Passengers">
-      </div> -->
-      <div class="form-group">
-        <label for="distance">Distances</label>
-        <input type="number" class="form-control" id="distance" placeholder="distances">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+    <!-- reload page -->
+    <form id="comment-form">
+      <input type="text" id="userName" name="userName" placeholder="Enter UserName">
+      <input type="text" id="title" name="title" placeholder="Enter Comment title ">
+      <textarea name="comment" id="comment" placeholder="Type Your Comment..."></textarea>
+      <button type="submit">Submit</button>
     </form>
 
-      <div id="carboninfo">CO2 emmisions here when you input distance traveled in car</div><!-- Add more content here -->
-    
-      <div id="carboninfo">Click button that correponds to size of your car</div><!-- Add more content here -->
-  </section>
+  </div>
+</section>
 
-  <div></div>
-  <section class="features" id="features">
-    <h2>Key Features</h2>
-    <ul>
-      <li>
-        <img src="path/to/icon-1.png" alt="Feature 1" /> Feature 1 Description
-      </li>
-      <li>
-        <img src="path/to/icon-2.png" alt="Feature 2" /> Feature 2 Description
-      </li>
-      <!-- Add more features here -->
-    </ul>
-  </section>
 
-  <section class="recycling-tips" id="recycling-tips">
-    <h2>Recycling Tips</h2>
-    <p>Helpful tips on recycling and sustainable practices.</p>
-    <!-- Add more content here -->
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>E-mail: 64redbrick@gmail.com</p>
-  </section>
-
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Recycling App, Inc</span>
+    <div class="container">
+      <h1>Calculate Emmisions</h1>
+      <form id="car-form">
+        <div class="form-group">
+          <label for="distance">Enter Distance (in miles):</label>
+          <input type="number" id="distance" name="distance" required placeholder="distances">
+        </div>
+        <button type="submit"  class="btn btn-primary">Calculate</button>
+      </form>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#twitter"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#instagram"></use>
-          </svg></a></li>
-      <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-            <use xlink:href="#facebook"></use>
-          </svg></a></li>
-    </ul>
-  </footer>
+    <div id="carboninfo" style="text-align: center";>CO2 emmisions here when you input distance traveled in car</div><!-- Add more content here -->
+
+  
+</section>
+
+<div></div>
+
+
+<section class="emmisions-tips" id="emmisions-tips">
+  <h2>Emmisions Tips</h2>
+  <p>Helpful tips on emmisions and sustainable practices.</p>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lowering emmisions by recyling</h5>
+          <p class="card-text">Reduce, Reuse, Recycle: Minimize waste and recycle materials.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Turn off lights</h5>
+          <p class="card-text">Energy and Water Conservation: Turn off lights, unplug devices, fix leaks, and use low-flow fixtures.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Use public transportation</h5>
+          <p class="card-text">Transportation: Use electric vehicles, public transport, carpool, or telecommute.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Use Renewable Energy</h5>
+          <p class="card-text">Renewable Energy: Consider solar panels and wind energy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+
+
+  <!-- Add more content here -->
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>E-mail: 64redbrick@gmail.com</p>
+</section>
+
+
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+    <span class="mb-3 mb-md-0 text-body-secondary">© 2023 CO2 Emmisions App, Inc</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#twitter"></use>
+        </svg></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#instagram"></use>
+        </svg></a></li>
+    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#facebook"></use>
+        </svg></a></li>
+  </ul>
+
+</footer>
 
 </body>
 <script src="./scripts.js"></script>
