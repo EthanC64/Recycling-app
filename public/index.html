@@ -12,7 +12,7 @@
 
 <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
   <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-    <img class="bi me-2" width="80" height="64" src="asset/image/CO2-Emissions-App.png" alt="CO2 Emissions App">
+    <img class="bi me-2" width="80" height="64" src="asset/image/logo-no-text.png" alt="CO2 Emissions App">
 
     <span class="fs-4">CO2 Emissions App</span>
 
@@ -22,8 +22,9 @@
 
   <ul class="nav nav-pills">
     <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
-    <li class="nav-item"><a href="#discussion" class="nav-link">Discussion</a></li>
     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="#discussion" class="nav-link">Discussion</a></li>
+    <li class="nav-item"><a href="#calculate" class="nav-link">Calculate Emmisions</a></li>
     <li class="nav-item"><a href="#emmisions-tips" class="nav-link">Emmisions Tips</a></li>
     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
   </ul>
@@ -42,13 +43,13 @@
 
 
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-  <div class="col-md-6 p-lg-5 mx-auto my-5">
+  <div class="col-md-6 p-lg-1 mx-auto my-5">
 
 
     <h1 class="display-3 fw-bold">CO2 Emissions App</h1>
     <h3 class="fw-normal text-muted mb-3">Help reduce CO2 in the environment and track you emmisisons with the CO2
       Emissions App</h3>
-      <img class="co2-image" id="co2image" width="650" height="640" src="asset/image/co2image.avif" alt="CO2 Image">
+    <nav><a href="#about"><img class="co2-image" id="co2image" src="asset/image/co2image.avif" alt="CO2 Image"></a></nav>
     <div class="d-flex gap-3 justify-content-center lead fw-normal">
       <!-- collection date lookup -->
       <!-- <a href="https://getitdone.sandiego.gov/CollectionMapLookup" target="_blank">
@@ -68,26 +69,30 @@
 
 
 <section class="about" id="about">
-  <h2>About the CO2 Emissions App</h2>
-  <p>
-    The CO2 Emissions App allows users to track and reduce their carbon footprint, offeringre tips for
+  <h2 class="sectiontitles">About the CO2 Emissions App</h2>
+  <div class="aboutapp">
+    The CO2 Emissions App allows users to track and reduce their carbon footprint, offering tips for
     sustainable choices and tips toward a greener future.
-  </p>
+  </div>
   <!-- Add more content here -->
 </section>
 
+<div class="spacing">
+
+
+</div>
 <section class="discussion" id="discussion">
-  <h2>Discussion</h2>
+  <h2 class="discussion-title">Discussion</h2>
   <div id="current">template</div>
   <div id="chat-container"></div>
 
-  <h3>(write a comment here)</h3>
+  <h3 class="comment-directions">(write a comment here)</h3>
   <div class="comment">
 
     <!-- reload page -->
     <form id="comment-form">
-      <input type="text" id="userName" name="userName" placeholder="Enter UserName">
-      <input type="text" id="title" name="title" placeholder="Enter Comment title ">
+      <input type="text" id="userName" name="userName" placeholder="Enter Username">
+      <input type="text" id="title" name="title" placeholder="Enter Comment Title ">
       <textarea name="comment" id="comment" placeholder="Type Your Comment..."></textarea>
       <button type="submit">Submit</button>
     </form>
@@ -96,34 +101,35 @@
 </section>
 
 
-    <div class="container">
-      <h1>Calculate Emmisions</h1>
-      <form id="car-form">
-        <div class="form-group">
-          <label for="distance">Enter Distance (in miles):</label>
-          <input type="number" id="distance" name="distance" required placeholder="distances">
-        </div>
-        <button type="submit"  class="btn btn-primary">Calculate</button>
-      </form>
+<div class="container" id="calculate">
+  <h1 class="clacemmisisonstitle">Calculate Emmisions</h1>
+  <form id="car-form">
+    <div class="form-group">
+      <label for="distance" class="calculate-directions">Enter Distance (in miles):</label>
+      <input type="number" id="distance" name="distance" required placeholder="Enter distance here in miles">
     </div>
+    <button type="submit" class="btn btn-primary">Calculate</button>
+  </form>
+</div>
 
-    <div id="carboninfo" style="text-align: center";>CO2 emmisions here when you input distance traveled in car</div><!-- Add more content here -->
-
-  
+<div id="carboninfo" style="text-align: center" ;>CO2 emmisions data here when you input distance traveled in car</div>
+<!-- Add more content here -->
 </section>
 
 <div></div>
 
 
 <section class="emmisions-tips" id="emmisions-tips">
-  <h2>Emmisions Tips</h2>
-  <p>Helpful tips on emmisions and sustainable practices.</p>
+  <h2 class="emmisions-tips">Emmisions Tips</h2>
+  <p class="emmisions-tips-description">Helpful tips on emmisions and sustainable practices. (Click the blue titles for links on more info!)</p>
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="asset\image\recyclingbuckets.png" class="card-img-top" alt="trash buckets">
         <div class="card-body">
-          <h5 class="card-title">Lowering emmisions by recyling</h5>
+          <h5 class="card-title">
+            <a target="_blank" href="https://www.stopwaste.org/at-work/recycling-business-waste/recycling-and-climate-protection">Lowering Emmisions by Recyling</a>
+          </h5>
           <p class="card-text">Reduce, Reuse, Recycle: Minimize waste and recycle materials.
           </p>
         </div>
@@ -131,35 +137,64 @@
     </div>
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="asset\image\lightsoff.jpg" class="card-img-top" alt="lights off">
         <div class="card-body">
-          <h5 class="card-title">Turn off lights</h5>
-          <p class="card-text">Energy and Water Conservation: Turn off lights, unplug devices, fix leaks, and use low-flow fixtures.
+          <h5 class="card-title">
+            <a target="_blank" href="https://www.canr.msu.edu/news/turning_off_the_lights_will_it_save_the_planet">Turn Off Lights</a>
+          </h5>
+          <p class="card-text">Energy and Water Conservation: Turn off lights, unplug devices, fix leaks, and use
+            low-flow fixtures.
           </p>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="asset\image\bikingwalking.jpg" class="card-img-top" alt="biking and walking">
         <div class="card-body">
-          <h5 class="card-title">Use public transportation</h5>
-          <p class="card-text">Transportation: Use electric vehicles, public transport, carpool, or telecommute.
+          <h5 class="card-title">
+            <a target="_blank" href="https://transportation.ucla.edu/blog/how-bike-riding-benefits-environment#:~:text=Human%2Dpowered%20and%20not%20reliant,cuts%20back%20on%20fuel%20consumption.&text=The%20clamor%20cars%20make%20creates%20noise%20pollution.">Bike or Walk for Short Trips</a>
+          </h5>
+          <p class="card-text">Try adding walking or biking into your everyday routine when heading to nearby places.
           </p>
         </div>
       </div>
     </div>
     <div class="col">
       <div class="card">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="asset\image\solarwind.jpg" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Use Renewable Energy</h5>
+          <h5 class="card-title">
+            <a target="_blank" href="https://www.epa.gov/statelocalenergy/local-renewable-energy-benefits-and-resources#:~:text=Benefits%20of%20Renewable%20Energy,-Environmental%20and%20economic&text=Generating%20energy%20that%20produces%20no,in%20manufacturing%2C%20installation%2C%20and%20more">Use Renewable Energy</a>
+            </h5>
           <p class="card-text">Renewable Energy: Consider solar panels and wind energy.</p>
         </div>
       </div>
     </div>
+    <div class="col">
+      <div class="card">
+        <img src="asset\image\unplug.avif" class="card-img-top" alt="Unplug Devices">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a target="_blank" href="https://blog.ecoflow.com/us/does-unplugging-appliances-save-electricity-and-money/#:~:text=On%20an%20environmental%20note%2C%20a,gas%2Dpowered%20vehicles%20every%20year.">Unplug Devices When Your Not Using Them</a>
+            </h5>
+          <p class="card-text">Unplugging devices when not in use saves energy and money while reducing your environmental impact.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="asset\image\donation.jpg" class="card-img-top" alt="Donate">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a target="_blank" href="https://madisonsquarepark.org/community/news/2022/06/donating-used-goods-to-help-the-environment/">Keep Stuff Out Of the Landfill</a>
+            </h5>
+          <p class="card-text">Don't toss your stuff in the trash; instead, consider recycling, upcycling, or donating. It's a simple way to make a big difference for our environment.</p>
+        </div>
+      </div>
+    </div>
   </div>
- 
+
 
 
 
@@ -168,7 +203,7 @@
   <!-- Add more content here -->
 </section>
 
-<section class="contact" id="contact">
+<section class="contact conatiner" id="contact">
   <h2>Contact Us</h2>
   <p>E-mail: 64redbrick@gmail.com</p>
 </section>
@@ -177,7 +212,7 @@
 
 
 
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
   <div class="col-md-4 d-flex align-items-center">
     <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
       <svg class="bi" width="30" height="24">
@@ -205,3 +240,5 @@
 <script src="./scripts.js"></script>
 
 </html>
+<!-- Welcome to the CO2 App!
+This comment section allows users to discuss problems, solutions, or any questions about emissions. Feel free to leave a comment down below about anything! -->
